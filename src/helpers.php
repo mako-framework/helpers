@@ -8,9 +8,11 @@
 use mako\application\Application;
 use mako\config\Config;
 use mako\http\Request;
+use mako\http\routing\URLBuilder;
 use mako\i18n\I18n;
 use mako\pusher\Pusher;
 use mako\syringe\Container;
+use mako\utility\Humanizer;
 
 if(function_exists('app') === false)
 {
@@ -109,6 +111,46 @@ if(function_exists('i18n') === false)
 		}
 
 		return $i18n;
+	}
+}
+
+if(function_exists('humanizer') === false)
+{
+	/**
+	 * Returns the humanizer instance.
+	 *
+	 * @return \mako\utility\Humanizer
+	 */
+	function humanizer(): Humanizer
+	{
+		static $humanizer;
+
+		if($humanizer === null)
+		{
+			$humanizer = Application::instance()->getContainer()->get(Humanizer::class);
+		}
+
+		return $humanizer;
+	}
+}
+
+if(function_exists('url') === false)
+{
+	/**
+	 * Returns the url builder instance.
+	 *
+	 * @return \mako\http\routing\URLBuilder
+	 */
+	function url(): URLBuilder
+	{
+		static $url;
+
+		if($url === null)
+		{
+			$url = Application::instance()->getContainer()->get(URLBuilder::class);
+		}
+
+		return $url;
 	}
 }
 
