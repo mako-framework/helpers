@@ -1,5 +1,7 @@
 # Mako helpers
 
+[![Build Status](https://img.shields.io/travis/mako-framework/helpers/master.svg?style=flat)](https://travis-ci.org/mako-framework/helpers)
+
 ## What is this?
 
 A collection of convenient helper functions meant to be used in your views.
