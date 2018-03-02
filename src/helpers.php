@@ -4,11 +4,10 @@
  * @copyright Frederic G. Østby
  * @license   http://www.makoframework.com/license
  */
-
 use mako\application\Application;
 use mako\config\Config;
-use mako\gatekeeper\Authentication;
 use mako\gatekeeper\adapters\AdapterInterface;
+use mako\gatekeeper\Authentication;
 use mako\http\Request;
 use mako\http\routing\URLBuilder;
 use mako\i18n\I18n;
