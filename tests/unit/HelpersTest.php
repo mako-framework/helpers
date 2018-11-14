@@ -91,6 +91,58 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
+	public function testCookie()
+	{
+		$mock = Mockery::mock('alias:mako\application\Application');
+
+		$mock->shouldReceive('instance')->once()->andReturn($mock);
+
+		$container = Mockery::mock('alias:mako\syringe\Container');
+
+		$request = Mockery::mock('mako\http\Request');
+
+		$cookies = Mockery::mock('mako\http\request\Cookies');
+
+		$cookies->shouldReceive('get')->once()->with('name', null);
+
+		$request->shouldReceive('getCookies')->once()->andReturn($cookies);
+
+		$container->shouldReceive('get')->once()->with('mako\http\Request')->andReturn($request);
+
+		$mock->shouldReceive('getContainer')->once()->andReturn($container);
+
+		$this->assertNull(cookie('name'));
+	}
+
+	/**
+	 *
+	 */
+	public function testSignedCookie()
+	{
+		$mock = Mockery::mock('alias:mako\application\Application');
+
+		$mock->shouldReceive('instance')->once()->andReturn($mock);
+
+		$container = Mockery::mock('alias:mako\syringe\Container');
+
+		$request = Mockery::mock('mako\http\Request');
+
+		$cookies = Mockery::mock('mako\http\request\Cookies');
+
+		$cookies->shouldReceive('getSigned')->once()->with('name', null);
+
+		$request->shouldReceive('getCookies')->once()->andReturn($cookies);
+
+		$container->shouldReceive('get')->once()->with('mako\http\Request')->andReturn($request);
+
+		$mock->shouldReceive('getContainer')->once()->andReturn($container);
+
+		$this->assertNull(signed_cookie('name'));
+	}
+
+	/**
+	 *
+	 */
 	public function testI18n()
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');

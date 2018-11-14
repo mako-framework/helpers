@@ -94,6 +94,36 @@ if(function_exists('request') === false)
 
 		return $request;
 	}
+
+	if(function_exists('cookie') === false)
+	{
+		/**
+		 * Gets a cookie value.
+		 *
+		 * @param  string $name    Cookie name
+		 * @param  mixed  $default Default value
+		 * @return mixed
+		 */
+		function cookie(string $name, $default = null)
+		{
+			return request()->getCookies()->get($name, $default);
+		}
+	}
+
+	if(function_exists('signed_cookie') === false)
+	{
+		/**
+		 * Gets a signed cookie value.
+		 *
+		 * @param  string $name    Cookie name
+		 * @param  mixed  $default Default value
+		 * @return mixed
+		 */
+		function signed_cookie(string $name, $default = null)
+		{
+			return request()->getCookies()->getSigned($name, $default);
+		}
+	}
 }
 
 if(function_exists('i18n') === false)
