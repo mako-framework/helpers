@@ -25,7 +25,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testApp()
+	public function testApp(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
@@ -39,7 +39,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testContainer()
+	public function testContainer(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
@@ -55,7 +55,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testConfig()
+	public function testConfig(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
@@ -71,7 +71,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testRequest()
+	public function testRequest(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
@@ -91,7 +91,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testCookie()
+	public function testCookie(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
@@ -117,7 +117,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testSignedCookie()
+	public function testSignedCookie(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
@@ -143,7 +143,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testI18n()
+	public function testI18n(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
@@ -163,7 +163,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testHumanizer()
+	public function testHumanizer(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
@@ -183,7 +183,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testUrl()
+	public function testUrl(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
@@ -203,7 +203,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testPusher()
+	public function testPusher(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
@@ -227,7 +227,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testSession()
+	public function testSession(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
@@ -247,7 +247,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testFlash()
+	public function testFlash(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
@@ -271,7 +271,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testToken()
+	public function testToken(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
@@ -295,7 +295,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testOneTimeToken()
+	public function testOneTimeToken(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
@@ -319,7 +319,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testGatekeeper()
+	public function testGatekeeper(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
@@ -343,7 +343,7 @@ class HelpersTest extends PHPUnitTestCase
 	/**
 	 *
 	 */
-	public function testUser()
+	public function testUser(): void
 	{
 		$mock = Mockery::mock('alias:mako\application\Application');
 
