@@ -1,5 +1,6 @@
 {
     "name": "mako/helpers",
+    "description": "A collection of helper functions for the Mako Framework",
     "keywords": ["mako", "framework", "helpers"],
     "homepage": "http://makoframework.com",
     "license": "BSD-3-Clause",
