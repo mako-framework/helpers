@@ -1,29 +1,29 @@
 {
-	"name": "mako/helpers",
-	"keywords": ["mako", "framework", "helpers"],
-	"homepage": "http://makoframework.com",
-	"license": "BSD-3-Clause",
-	"authors": [
-		{
-			"name": "Frederic G. Østby",
-			"email": "frederic.g.ostby@gmail.com"
-		}
-	],
-	"autoload": {
-		"files": [
-			"src/helpers.php"
-		]
-	},
-	"require": {
-		"php": ">=7.2.0"
-	},
-	"require-dev": {
-		"phpunit/phpunit": "^8.0",
-		"mockery/mockery": "^1.2"
-	},
-	"extra": {
-		"branch-alias": {
-			"dev-master": "2.1-dev"
-		}
-	}
+    "name": "mako/helpers",
+    "keywords": ["mako", "framework", "helpers"],
+    "homepage": "http://makoframework.com",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Frederic G. Østby",
+            "email": "frederic.g.ostby@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.2"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.1-dev"
+        }
+    }
 }
