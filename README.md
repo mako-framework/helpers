@@ -27,6 +27,10 @@ A collection of convenient helper functions meant to be used in your views.
 
 > The `pusher` function will only work if you have installed the `mako/pusher` package and it also requires you to use the included middleware.
 
+## Requirements
+
+Mako 7.0 or greater.
+
 ## Installation
 
 	composer require mako/helpers
