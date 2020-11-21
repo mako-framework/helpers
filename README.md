@@ -1,6 +1,6 @@
 # Mako helpers
 
-[![Build Status](https://img.shields.io/travis/mako-framework/helpers/master.svg?style=flat)](https://travis-ci.org/mako-framework/helpers)
+[![Build Status](https://github.com/mako-framework/helpers/workflows/Tests/badge.svg)](https://github.com/mako-framework/helpers/actions?query=workflow%3ATests)
 
 ## What is this?
 
