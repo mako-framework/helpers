@@ -275,7 +275,7 @@ if(function_exists('gatekeeper') === false)
 	 * @param  string|null                                $adapterName Adapter name
 	 * @return \mako\gatekeeper\adapters\AdapterInterface
 	 */
-	function gatekeeper(string $adapterName = null): AdapterInterface
+	function gatekeeper(?string $adapterName = null): AdapterInterface
 	{
 		static $gatekeeper;
 
@@ -295,7 +295,7 @@ if(function_exists('gatekeeper') === false)
 		 * @param  string|null                                             $adapterName Adapter name
 		 * @return \mako\gatekeeper\entities\user\UserEntityInterface|null
 		 */
-		function user(string $adapterName = null)
+		function user(?string $adapterName = null)
 		{
 			return gatekeeper($adapterName)->getUser();
 		}
