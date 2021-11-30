@@ -29,7 +29,7 @@ A collection of convenient helper functions meant to be used in your views.
 
 ## Requirements
 
-Mako 7.0 or greater.
+Mako 8.0 or greater.
 
 ## Installation
 
