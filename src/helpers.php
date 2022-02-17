@@ -7,7 +7,7 @@
 use mako\application\Application;
 use mako\config\Config;
 use mako\gatekeeper\adapters\AdapterInterface;
-use mako\gatekeeper\Authentication;
+use mako\gatekeeper\Gatekeeper;
 use mako\http\Request;
 use mako\http\routing\URLBuilder;
 use mako\i18n\I18n;
@@ -281,7 +281,7 @@ if(function_exists('gatekeeper') === false)
 
 		if($gatekeeper === null)
 		{
-			$gatekeeper = Application::instance()->getContainer()->get(Authentication::class);
+			$gatekeeper = Application::instance()->getContainer()->get(Gatekeeper::class);
 		}
 
 		return $gatekeeper->adapter($adapterName);
