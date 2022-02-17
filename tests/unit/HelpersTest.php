@@ -327,11 +327,11 @@ class HelpersTest extends PHPUnitTestCase
 
 		$container = Mockery::mock('alias:mako\syringe\Container');
 
-		$authentication = Mockery::mock('alias:mako\gatekeeper\Authentication');
+		$authentication = Mockery::mock('alias:mako\gatekeeper\Gatekeeper');
 
 		$authentication->shouldReceive('adapter')->times(2)->with(null)->andReturn(Mockery::mock('mako\gatekeeper\adapters\AdapterInterface'));
 
-		$container->shouldReceive('get')->once()->with('mako\gatekeeper\Authentication')->andReturn($authentication);
+		$container->shouldReceive('get')->once()->with('mako\gatekeeper\Gatekeeper')->andReturn($authentication);
 
 		$mock->shouldReceive('getContainer')->once()->andReturn($container);
 
@@ -351,7 +351,7 @@ class HelpersTest extends PHPUnitTestCase
 
 		$container = Mockery::mock('alias:mako\syringe\Container');
 
-		$authentication = Mockery::mock('alias:mako\gatekeeper\Authentication');
+		$authentication = Mockery::mock('alias:mako\gatekeeper\Gatekeeper');
 
 		$adapter = Mockery::mock('alias:mako\gatekeeper\adapters\AdapterInterface');
 
@@ -359,7 +359,7 @@ class HelpersTest extends PHPUnitTestCase
 
 		$authentication->shouldReceive('adapter')->times(2)->with(null)->andReturn($adapter);
 
-		$container->shouldReceive('get')->once()->with('mako\gatekeeper\Authentication')->andReturn($authentication);
+		$container->shouldReceive('get')->once()->with('mako\gatekeeper\Gatekeeper')->andReturn($authentication);
 
 		$mock->shouldReceive('getContainer')->once()->andReturn($container);
 
